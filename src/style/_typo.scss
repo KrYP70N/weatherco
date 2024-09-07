@@ -1,0 +1,18 @@
+.title {
+  font-family: "Roboto", system-ui;
+  font-weight: 600;
+  font-size: 22px;
+  &_xl {
+    @extend .title;
+    font-size: 26px;
+    @media screen and (max-width: 600px) {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+  &_lg {
+    @extend .title;
+    font-weight: 400;
+    font-size: 22px;
+  }
+}

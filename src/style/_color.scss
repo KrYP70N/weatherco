@@ -1,0 +1,17 @@
+$colors: (
+  primary: #30056d,
+  secondary: #9662de,
+  tertiary: #0cebbb,
+  light: #fff,
+  text: #333,
+  dark: #000
+);
+
+@each $color, $val in $colors {
+  .txt_#{$color} {
+    color: $val;
+  }
+  .bg_#{$color} {
+    background: $val;
+  }
+}

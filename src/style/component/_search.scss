@@ -1,0 +1,31 @@
+.app-search {
+  max-width: 400px;
+  display: flex;
+  input {
+    @extend .txt_light;
+    width: 280px;
+    margin-right: 16px;
+    padding: 8px 18px;
+    background: none;
+    border: 1px solid rgba(map-get($colors, light), .5);
+    border-radius: 30px;
+    outline: none;
+    &::placeholder {
+      color: map-get($colors, light);
+    }
+  }
+  button {
+    @extend .txt_light;
+    width: 120px;
+    padding: 8px;
+    border-radius: 30px;
+    background: map-get($colors, secondary);
+    border: 1px solid rgba(map-get($colors, light), .5);
+  }
+  @media screen and (max-width: 600px) {
+    width: 320px;
+  }
+  @media screen and (max-width: 410px) {
+    width: 250px;
+  }
+}

@@ -1,0 +1,24 @@
+.astro {
+  &_title {
+    font-weight: 400;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(map-get($colors, light), .35);
+    padding-bottom: 12px;
+    img {
+      width: 28px;
+      margin-right: 12px;
+    }
+  }
+  ul {
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      span {
+        font-weight: 400;
+      }
+    }
+  }
+}

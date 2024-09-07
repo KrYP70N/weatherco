@@ -1,0 +1,25 @@
+.app-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(map-get($colors, light), .25);
+  margin-bottom: 26px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+  }
+  .title_xl {
+    @extend .txt_tertiary;
+    &.sm {
+      display: none;
+      @media screen and (max-width: 500px) {
+        display: block;
+      }
+    }
+    &.lg {
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+  }
+}
