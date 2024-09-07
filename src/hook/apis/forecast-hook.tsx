@@ -95,7 +95,7 @@ const fetchData = async (query: string): Promise<LocationData | LocationAPIError
       }
 
       const { lat, lon } = locationResult;
-      const response = await axios.get(`http://api.weatherapi.com/v1/forecast.json`, {
+      const response = await axios.get(`https://api.weatherapi.com/v1/forecast.json`, {
         params: {
           key: 'd59e5acbcfaa4ca594694003240709',
           q: `${lat},${lon}`
@@ -103,7 +103,7 @@ const fetchData = async (query: string): Promise<LocationData | LocationAPIError
       });
       return response.data as LocationData;
     } else {
-      const response = await axios.get(`http://api.weatherapi.com/v1/forecast.json`, {
+      const response = await axios.get(`https://api.weatherapi.com/v1/forecast.json`, {
         params: {
           key: 'd59e5acbcfaa4ca594694003240709',
           q: query
